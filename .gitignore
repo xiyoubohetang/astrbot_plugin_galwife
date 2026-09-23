@@ -31,11 +31,6 @@ failed_wives.txt
 romaji_cache.json
 group_stats.json
 
-# 角色数据文件（大文件，用户自己下载）
-wives_rich.jsonl
-wives_rich.jsonl.bak
-*.jsonl
-
 # 调试脚本
 test_get_plugin.py
 
