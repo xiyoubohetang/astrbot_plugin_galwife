@@ -1,0 +1,12 @@
+name: astrbot_plugin_galwife
+display_name: Gal今日老婆
+desc: 每天抽一位二次元老婆，附带立绘、介绍、作品出处。支持收藏、历史、排行、多图源、金币联动。
+version: v1.0.0
+author: 西柚薄荷糖
+repo: https://github.com/xiyoubohetang/astrbot_plugin_galwife
+astrbot_version: ">=4.0"
+support_platforms:
+  - aiocqhttp
+  - telegram
+  - discord
+  - qq_official

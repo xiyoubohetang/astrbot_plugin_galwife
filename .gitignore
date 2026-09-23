@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 插件运行时数据（不入库）
+data/
+img_cache/
+user_data/
+today_wife_state.json
+failed_wives.txt
+romaji_cache.json
+group_stats.json
+
+# 角色数据文件（大文件，用户自己下载）
+wives_rich.jsonl
+wives_rich.jsonl.bak
+*.jsonl
+
+# 调试脚本
+test_get_plugin.py
+
+# 日志
+*.log
+logs/
+
+# 临时文件
+*.tmp

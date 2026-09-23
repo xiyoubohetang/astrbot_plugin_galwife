@@ -1,0 +1,115 @@
+{
+    "wives_file": {
+        "description": "角色数据文件",
+        "type": "string",
+        "default": "wives_rich.jsonl",
+        "hint": "放在插件目录或 AstrBot 数据目录都可以。"
+    },
+    "send_image": {
+        "description": "是否发送图片",
+        "type": "bool",
+        "default": true
+    },
+    "card_theme": {
+        "description": "卡片主题",
+        "type": "string",
+        "default": "warm",
+        "options": ["warm", "dark"],
+        "hint": "warm = 米黄纸质风；dark = 深紫夜光风。"
+    },
+    "enable_coin_cost": {
+        "description": "启用金币联动",
+        "type": "bool",
+        "default": true,
+        "hint": "开启后 /换老婆 和 /换背景 会扣除画境拾珍的金币。未装画境拾珍时自动跳过。"
+    },
+    "reroll_cost": {
+        "description": "/换老婆 消耗金币",
+        "type": "int",
+        "default": 20,
+        "slider": {"min": 0, "max": 500, "step": 5},
+        "hint": "每次换老婆扣多少金币。0 表示免费。每日老婆始终免费。"
+    },
+    "bg_cost": {
+        "description": "/换背景 消耗金币",
+        "type": "int",
+        "default": 10,
+        "slider": {"min": 0, "max": 500, "step": 5},
+        "hint": "换背景 = 不换角色，只换图。"
+    },
+    "random_cost": {
+        "description": "/随机老婆 消耗金币",
+        "type": "int",
+        "default": 20,
+        "slider": {"min": 0, "max": 500, "step": 5}
+    },
+    "enable_sensitive_filter": {
+        "description": "启用敏感词过滤",
+        "type": "bool",
+        "default": false,
+        "hint": "开启后会跳过含 R18 词的角色介绍。"
+    },
+    "intro_max_len": {
+        "description": "介绍最大长度（0 不截断）",
+        "type": "int",
+        "default": 300,
+        "slider": {"min": 0, "max": 1000, "step": 50}
+    },
+    "daily_cleanup_hour": {
+        "description": "每天定时清理小时（0-23）",
+        "type": "int",
+        "default": 4,
+        "slider": {"min": 0, "max": 23, "step": 1},
+        "hint": "每天这个点钟清理一次过期缓存和今日状态。"
+    },
+    "api_timeout": {
+        "description": "API 请求超时（秒）",
+        "type": "float",
+        "default": 5.0
+    },
+    "download_timeout": {
+        "description": "图片下载超时（秒）",
+        "type": "float",
+        "default": 15.0
+    },
+    "max_image_mb": {
+        "description": "图片最大体积（MB）",
+        "type": "float",
+        "default": 8.0
+    },
+    "max_image_kb": {
+        "description": "图片压缩后大小上限（KB）",
+        "type": "int",
+        "default": 800,
+        "slider": {"min": 100, "max": 5000, "step": 100}
+    },
+    "max_side": {
+        "description": "图片最长边像素",
+        "type": "int",
+        "default": 1600,
+        "slider": {"min": 600, "max": 3000, "step": 100}
+    },
+    "max_retry_per_wife": {
+        "description": "单次抽卡最多尝试几个角色",
+        "type": "int",
+        "default": 5,
+        "slider": {"min": 1, "max": 20, "step": 1}
+    },
+    "lolicon_api": {
+        "description": "Lolicon API 地址",
+        "type": "string",
+        "default": "https://api.lolicon.app/setu/v2"
+    },
+    "image_proxy_origin": {
+        "description": "Pixiv 图片反代域名",
+        "type": "string",
+        "default": "https://i.pixiv.re",
+        "hint": "把 Lolicon 返回的 i.pximg.net 替换成这个域名。"
+    },
+    "getpx_db_path": {
+        "description": "get_px 数据库路径（留空自动推断）",
+        "type": "string",
+        "default": "",
+        "hint": "画境拾珍的 checkin.sqlite3 完整路径。留空会自动从 AstrBot 数据目录推断。"
+    }
+}
