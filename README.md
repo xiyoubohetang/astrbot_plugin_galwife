@@ -42,13 +42,15 @@ pip install -r requirements.txt
 
 ### 3. 导入角色数据
 
-下载 `wives_rich.jsonl`（约 2 万条角色，含名字/作品/介绍/立绘），放到插件目录或 AstrBot 数据目录：
+本插件依赖角色数据文件 `wives_rich.jsonl`（约 2 万条，含名字/作品/介绍/立绘）。
+
+**数据已随仓库附带**，clone 下来即可使用，无需额外下载。把 `wives_rich.jsonl` 放到插件目录或 AstrBot 数据目录：
 
 ```text
 AstrBot/data/plugin_data/astrbot_plugin_galwife/wives_rich.jsonl
 ```
 
-> 数据来源：Bangumi（番组计划）角色数据库，筛选知名女角色。
+> 数据来源：[Bangumi 番组计划](https://bgm.tv/) 角色数据库，筛选知名女角色。
 
 重启 AstrBot 即可。
 
@@ -167,7 +169,8 @@ astrbot_plugin_galwife/
 ├── requirements.txt      # 依赖
 ├── README.md
 ├── LICENSE
-└── .gitignore
+├── .gitignore
+└── wives_rich.jsonl      # 角色数据（约 2 万条）
 ```
 
 ## 🙏 致谢
